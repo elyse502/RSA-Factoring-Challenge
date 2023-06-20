@@ -13,7 +13,7 @@ _We have sniffed an unsecured network and found numbers that are used to encrypt
 ./<script> <Test Case>
 ```
 ## KNOWN ISSUE 🩹
-* At the moment there are no known Bugs.
+* At this time, there are no known bugs.
 ## AUTHOR📝
 *__NIYIBIZI Elysée__ | [Linkedin](https://www.linkedin.com/in/niyibizi-elys%C3%A9e/).*
 
