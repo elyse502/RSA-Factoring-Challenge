@@ -9,10 +9,11 @@ def factorize(number):
 
     if number < 2:
         return
-    
+
     while number % i:
         i += 1
     print("{:.0f}={:.0f}*{:.0f}".format(number, number / i, i))
+
 
 if len(argv) != 2:
     exit()
@@ -25,6 +26,5 @@ try:
             number = int(line.split('\n')[0])
             factorize(number)
             line = file.readline()
-except:
+except SpecificException:
     pass
-
