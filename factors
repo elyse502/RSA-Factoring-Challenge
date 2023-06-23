@@ -29,4 +29,3 @@ with open(argv[1]) as f:
                 # If the factor is prime, print its factorization and break the loop.
                 print("{}*{}".format(factor, i))
                 break
-
