@@ -12,7 +12,7 @@ with open(argv[1]) as f:
         """ Print the number followed by an equals sign. """
         print("{:d}=".format(number), end="")
 
-        """ If the number is even, print the factorization and continue to the next line. """
+        """ If the number is even, print the factorization & continue to the next line. """
         if number % 2 == 0:
             print("{}*2".format(number//2))
             continue
