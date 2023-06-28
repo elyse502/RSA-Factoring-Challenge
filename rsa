@@ -1,28 +1,34 @@
 #!/usr/bin/python3
-""" Factorizes numbers in a File into a product of two prime numbers. """
+""" Factorize as many numbers as possible into a product of two smaller numbers. """
+
+# library to get arguments
 import sys
 
 
+# fn unpack number factorial
 def factorize():
-    """ A function to search File and factorize the given set of numbers into two prime numbers (format n = p * q). """
+    """
+     A function to search File and factorize the given set of numbers into two prime numbers (format n = p * q).
+    """
     try:
-        file = sys.argv[1]
-        with open(file) as f:
-            for line_num in f:
-                line_num = int(line_num)
-                if line_num % 2 == 0:
-                        print("{}={}*{}".format(line_num, line_num // 2, 2))
+        revfile = sys.argv[1]
+        with open(revfile) as f:
+            for revnumber in f:
+                revnumber = int(revnumber)
+                if revnumber % 2 == 0:
+                        print("{}={}*{}".format(revnumber, revnumber // 2, 2))
                         continue
                 i = 3
-                while i < line_num // 2:
-                    if line_num % i == 0:
-                        print("{}={}*{}".format(line_num, line_num // i, i))
+                while i < revnumber // 2:
+                    if revnumber % i == 0:
+                        print("{}={}*{}".format(revnumber, revnumber // i, i))
                         break
                     i = i + 2
-                if i == (line_num // 2) + 1:
-                    print("{}={}*{}".format(line_num, line_num, 1))
+                if i == (revnumber // 2) + 1:
+                    print("{}={}*{}".format(revnumber, revnumber, 1))
     except (IndexError):
         pass
 
 
+# Autostart
 factorize()
