@@ -1,14 +1,10 @@
 #!/usr/bin/python3
-"""
-Factorizes numbers in a File into a product of two prime numbers.
-"""
+""" Factorizes numbers in a File into a product of two prime numbers. """
 import sys
 
 
 def factorize():
-    """
-    A function to search File and factorize the given set of numbers into two prime numbers (format n = p * q).
-    """
+    """ A function to search File and factorize the given set of numbers into two prime numbers (format n = p * q). """
     try:
         file = sys.argv[1]
         with open(file) as f:
@@ -30,4 +26,3 @@ def factorize():
 
 
 factorize()
-
